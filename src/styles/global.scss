@@ -1,0 +1,12 @@
+@import "normalize.css";
+@import "var";
+@import "header";
+
+h1 {
+	color: hotpink;
+	font-family: cursive;
+}
+
+header {
+	@include flex(center, center);
+}

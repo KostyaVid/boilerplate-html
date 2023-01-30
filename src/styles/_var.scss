@@ -7,3 +7,12 @@
     url("/fonts/Lexend_Peta-webfont.svg") format("svg");
   font-weight: normal;
 }*/
+
+@mixin flex($align-items, $justify-content){
+	display: flex;
+	align-items: $align-items;
+	justify-content: $justify-content;
+}
+@mixin flex-col($align-items, $justify-content){
+	@include flex($align-items, $justify-content)
+}

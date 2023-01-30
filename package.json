@@ -12,5 +12,8 @@
     "parcel": "latest",
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^1.7.4"
+  },
+  "dependencies": {
+    "enquire.js": "^2.1.6"
   }
 }
