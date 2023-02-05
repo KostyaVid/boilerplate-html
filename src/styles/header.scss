@@ -1,11 +1,59 @@
-@import "var";
+@import "mixins";
 @import "burger";
+
+.header {
+	@include flex-sb;
+	position: relative;
+}
+
+.menu {
+	@media (max-width: 769px) {
+		position: absolute;
+		width: 70%;
+		height: 100vh;
+		top: 0;
+		right: -70%;
+		z-index: 90;
+		transition: all 0.2s ease;
+	}
+}
+
+.menu-container {
+	@include flex-c;
+
+	@media (max-width: 769px) {
+		height: 100%;
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+}
+
+@media (max-width: 769px) {
+	.menu-active {
+		right: 0;
+	}
+}
+
+.menu-item {
+	color: var(--color-link);
+}
+
+.menu-item + .menu-item{
+	@media(min-width:769px){
+		margin-left: 1rem;
+	}
+}
 
 .menu-button {
 	display: inline-block;
 	padding: 0.5em;
 	background-color: #fafafa;
 	border: 1px solid #ccc;
+	z-index: 100;
+	@media (min-width: 769px) {
+		display: none;
+	}
 }
 
 .burger-icon {

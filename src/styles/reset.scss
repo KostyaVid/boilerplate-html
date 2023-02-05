@@ -1,0 +1,39 @@
+html,
+body {
+	overflow-x: hidden;
+	min-height: 100vh;
+}
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+section,
+header,
+footer,
+main,
+nav,
+ul,
+li,
+article,
+aside {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color:var(--color-link)
+}
+
+

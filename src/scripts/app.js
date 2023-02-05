@@ -3,12 +3,17 @@ import enquire from "enquire.js";
 let isActiveMenu = false;
 
 function mobileInit() {
+	const menu = document.querySelector(".menu");
 	const clickBurgerHandle = (e) => {
 		e.preventDefault();
 		if (isActiveMenu) {
 			e.currentTarget.classList.remove("is-active");
+			menu.classList.remove("menu-active");
+			e.currentTarget.setAttribute("aria-label", "Open menu");
 		} else {
 			e.currentTarget.classList.add("is-active");
+			menu.classList.add("menu-active");
+			e.currentTarget.setAttribute("aria-label", "Close menu");
 		}
 		isActiveMenu = !isActiveMenu;
 	};
@@ -18,7 +23,9 @@ function mobileInit() {
 		menuButton.addEventListener("click", clickBurgerHandle);
 	};
 	const clearStateBurger = () => {
+		menu.classList.remove("menu-active");
 		menuButton.classList.remove("is-active");
+		menuButton.currentTarget.setAttribute("aria-label", "Open menu");
 		isActiveMenu = false;
 		menuButton.removeEventListener("click", clickBurgerHandle);
 	};
@@ -31,11 +38,9 @@ function mobileInit() {
 
 const [mobileSetState, mobileClearState] = mobileInit();
 
-
-
 /**Setup Media Query
-	*
-	*/
+ *
+ */
 enquire.register("screen and (max-width:768px)", {
 	match: function () {
 		mobileSetState();
