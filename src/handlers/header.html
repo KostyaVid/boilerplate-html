@@ -1,15 +1,28 @@
-<header class='header'>
-	<div>Logo</div>
+<header class="header">
+	<div>{{ text }}</div>
 	<nav class="menu">
 		<ul class="menu-container">
-			<li class="menu-item"><a href="#">menu link</a></li>
-			<li class="menu-item"><a href="#">menu link</a></li>
-			<li class="menu-item"><a href="#">menu link</a></li>
-			<li class="menu-item"><a href="#">menu link</a></li>
+			<li class="menu-item">
+				<a href="#" data-menu-item data-menu-focus>menu link</a>
+			</li>
+			<li class="menu-item">
+				<a href="#" data-menu-item data-menu-focus>menu link</a>
+			</li>
+			<li class="menu-item">
+				<a href="#" data-menu-item data-menu-focus>enu link</a>
+			</li>
+			<li class="menu-item">
+				<a href="#" data-menu-item data-menu-focus>menu link</a>
+			</li>
 		</ul>
 	</nav>
-	<button href="#" class="menu-button" id="menuButton" aria-label='Open menu'>
+	<button
+		type="button"
+		class="menu-button"
+		id="menuButton"
+		data-menu-focus
+		aria-label="Open menu"
+	>
 		<span class="burger-icon"></span>
 	</button>
 </header>
-	<button class="button"><div class="button-text">{{ text }}</div></button>
