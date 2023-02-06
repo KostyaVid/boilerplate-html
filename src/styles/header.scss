@@ -9,10 +9,10 @@
 .menu {
 	@media (max-width: 769px) {
 		position: absolute;
-		width: 70%;
+		width: 100vw;
 		height: 100vh;
 		top: 0;
-		right: -70%;
+		right: -100vw;
 		z-index: 90;
 		transition: all 0.2s ease;
 	}
@@ -23,7 +23,8 @@
 
 	@media (max-width: 769px) {
 		height: 100%;
-		width: 100%;
+		width: 70vw;
+		margin-left: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
 	}
@@ -39,8 +40,8 @@
 	color: var(--color-link);
 }
 
-.menu-item + .menu-item{
-	@media(min-width:769px){
+.menu-item + .menu-item {
+	@media (min-width: 769px) {
 		margin-left: 1rem;
 	}
 }
