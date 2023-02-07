@@ -18,7 +18,7 @@ Template based [parcel.js](https://parceljs.org)
 yarn install
 ```
 
-## Work
+## Development
 
 ```
 yarn start
