@@ -20,20 +20,23 @@ footer,
 main,
 nav,
 ul,
-li,
 article,
 aside {
 	padding: 0;
 	margin: 0;
 }
 
-li {
-	list-style: none;
+nav ul {
+	padding: 0;
+	margin: 0;
+	li {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
 }
 
 a {
 	text-decoration: none;
-	color:var(--color-link)
+	color: var(--color-link);
 }
-
-
