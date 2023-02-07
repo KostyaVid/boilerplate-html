@@ -21,6 +21,7 @@ yarn install
 ## Development
 
 ```
+yarn add --dev parcel
 yarn start
 ```
 
