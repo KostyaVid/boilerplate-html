@@ -4,12 +4,12 @@ Template based [parcel.js](https://parceljs.org)
 
 ## Futures
 
--   Add inline Template html
--   Add normilize.css
--   Add Animate button Burger
--   Add adaptive menu
--   Add True focus in the mobile menu
--   Add matchMedia triggers
+-   Inline Template html
+-   Normilize.css
+-   Animate button Burger
+-   Adaptive menu
+-   True focus in the mobile menu
+-   MatchMedia triggers
 -   Use [parcel.js](https://parceljs.org)
 
 ## Install
